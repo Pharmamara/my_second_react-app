@@ -1,0 +1,25 @@
+body {
+  background: #f0f0f0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  grid-column: span 3;
+}
+
+@media screen and (max-width: 460px) {
+  .App {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.1em;
+    color: blue;
+  }
+}

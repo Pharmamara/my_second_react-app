@@ -1,0 +1,37 @@
+.GiftCard {
+  border: 1px solid #c7c4c4;
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 5px;
+  text-align: center;
+  line-height: 1.5em;
+  animation: box-shadow 3s ease;
+  cursor: pointer;
+}
+
+.GiftCard:hover {
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.gc-image {
+  width: 100%;
+}
+
+.gc-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.gc-description {
+  font-size: 1em;
+}
+
+.gc-price {
+  color: green;
+  font-weight: bold;
+}
+
+.gc-price::before {
+  content: "$";
+}
