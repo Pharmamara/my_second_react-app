@@ -1,8 +1,8 @@
-.GiftCard {
+.HeroCard {
   border: 1px solid #c7c4c4;
   padding: 15px;
   border-radius: 5px;
-  background: #fff;
+  background: #64566a;
   margin: 5px;
   text-align: center;
   line-height: 1.5em;
@@ -10,28 +10,35 @@
   cursor: pointer;
 }
 
-.GiftCard:hover {
-  box-shadow: 10px 10px 5px #aaaaaa;
+.HeroCard:hover {
+  box-shadow: 10px 10px 5px #777777;
+  background: #c4bdc7;
 }
 
-.gc-image {
+.hc-image {
   width: 100%;
 }
 
-.gc-name {
+.hc-name {
   font-weight: bold;
   font-size: 1.2em;
 }
+.hc-alterego {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 2%;
+}
 
-.gc-description {
+.hc-occupation {
   font-size: 1em;
 }
-
-.gc-price {
-  color: green;
-  font-weight: bold;
+.hc-superpowers {
+  font-size: 1em;
+  padding-bottom: 2%;
 }
-
-.gc-price::before {
-  content: "$";
+.hc-description {
+  font-size: 0.7em;
+}
+.hc-span {
+  font-weight: bold;
 }

@@ -1,34 +1,21 @@
 import React from "react";
-import "./data.js";
-class Card extends React.Component {
-  render() {
-    const {
-      url,
-      name,
-      universe,
-      alterego,
-      occupation,
-      friends,
-      superpowers,
-      info,
-    } = this.props;
-    return (
-      <div className="card">
-        <div className="card-body">
-          <img src={url} alt={name} />
-          <h4 className="card-name">{name}</h4>
-          <p className="card-universe">{universe}</p>
-          <p className="card-alterego">{alterego}</p>
-          <p className="card-occupation">{occupation}</p>
-          <p className="card-friends">{friends}</p>
-          <p className="card-superpowers">{superpowers}</p>
-          <p className="card-info">{info}</p>
-        </div>
-        <div className="card-footer">
-          <span className="card-score">#####</span>
-        </div>
+import "./Card.css";
+
+const HeroCard = ({ url, name, alterego, occupation, superpowers, info }) => {
+  return (
+    <div className="HeroCard">
+      <img className="hc-image" src={url} alt={name} />
+      <div className="hc-name">Имя: {name}</div>
+      <div className="hc-alterego">Второе Я: {alterego}</div>
+      <div className="hc-occupation">
+        <span className="hc-span">Призвание:</span> {occupation}
       </div>
-    );
-  }
-}
-export default Card;
+      <div className="hc-superpowers">
+        <span className="hc-span">Суперспособности:</span> {superpowers}
+      </div>
+      <div className="hc-description">{info}</div>
+    </div>
+  );
+};
+
+export default HeroCard;

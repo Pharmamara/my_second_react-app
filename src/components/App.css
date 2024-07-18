@@ -1,25 +1,26 @@
 body {
-  background: #f0f0f0;
+  background: #faf9fa;
 }
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 h1 {
   text-align: center;
-  grid-column: span 3;
+  grid-column: span 2;
+  color: rgb(8, 8, 20);
 }
 
 @media screen and (max-width: 460px) {
   .App {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   h1 {
-    font-size: 1.1em;
-    color: blue;
+    font-size: 1.5em;
   }
 }
